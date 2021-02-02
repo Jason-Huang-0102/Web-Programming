@@ -1,0 +1,167 @@
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>HW2</title>
+	<link rel="stylesheet" type="text/css" href="style.css"  />
+	   <style type = "text/css">
+	   p       { font-family: tahoma, helvetica, sans-serif, font-size:30; }
+		em       { font-weight: bold;
+                    color: black; }
+	   .special {color: red; }
+	   table,th,td { border:1px solid black; }
+		table{width:400px;height:400px;}
+		#table1{border-collapse: collapse;}
+		</style>
+   </head>
+   <body>
+   <div id="header">
+<h1><a href="#">網路訂單系統</a></h1>
+
+</div>
+
+<div id="content">
+<div class="left"> 
+
+<h2>資料填寫</h2>
+   <br></br>
+   <form  method = "post" action = "s1063305_HW2.php">
+   <table id="table1">
+    <tr>
+        <td colspan="2" width = "320" height = "160" >      
+			<img src = "1234567.jpg" width = "320" height = "160"/>
+		</td>
+		<td colspan="2" width = "320" height = "160" >      
+			<img src = "1234.jpg" width = "320" height = "160"/>
+		</td>
+    </tr>
+    <tr>
+        <td style = "text-align: center;" width = "320" height = "40">分享餐A</td>
+		<td width = "320" height = "40">
+		        <p>
+            <label>數量:
+               <input type = "number" name="numberone"
+                  min = "0"
+                  max = "10"
+                  step = "1"
+                  value = "0" />
+            </label> 
+         </p>
+
+		</td>
+		<td style = "text-align: center;" width = "320" height = "40">分享餐B</td>
+		<td width = "320" height = "40">
+		 <p>
+            <label>數量:
+               <input type = "number" name="numbertwo"
+                  min = "0"
+                  max = "10"
+                  step = "1"
+                  value = "0" />
+            </label> 
+         </p>
+
+		</td>
+    </tr>
+    <tr>
+      <td colspan="2" width = "320" height = "160" >      
+			<img src = "12345.jpg" width = "320" height = "160"/>
+		</td>
+		<td colspan="2" width = "320" height = "160" >      
+			<img src = "123456.jpg" width = "320" height = "160"/>
+		</td>
+    </tr>
+    <tr>
+        <td style = "text-align: center;" width = "320" height = "40">分享餐C</td>
+		<td width = "320" height = "40">
+		<p>
+            <label>數量:
+               <input type = "number" name="numberthree"
+                  min = "0"
+                  max = "10"
+                  step = "1"
+                  value = "0" />
+            </label> 
+         </p>
+		</td>
+		<td style = "text-align: center;" width = "320" height = "40">分享餐D</td>
+		<td width = "320" height = "40">
+		<p>
+            <label>數量:
+               <input type = "number" name="numberfour"
+                  min = "0"
+                  max = "10"
+                  step = "1"
+                  value = "0" />
+            </label> 
+         </p>
+		</td>
+    </tr>
+	</table>
+         <p>
+			<label style="font-size: 15pt;color: deepskyblue;" >姓名:
+               <input name = "name" type = "text" size = "25" required />
+            </label>
+		</p>
+		
+		<p>
+			<label>
+			<em>信箱</em>:
+               <input name = "email" type = "email" size = "25" placeholder = "name@domain.com" required />(webmaster@example.com.tw)
+            </label>
+		</p>
+		
+		
+		<p>
+			<label class="special">手機:
+               <input name = "phone" type = "text" size = "25"  
+			   pattern = "09\d{2}-\d{3}-\d{3}" required />
+            </label>
+		</p>
+         
+			<label>
+			<em>身份證號碼</em>:
+               <input name = "id" type = "text" size = "25"
+                 pattern = "[A-Z][1-2][0-9]{8}" required />
+
+            </label>
+		 <p>
+		 
+		  <p><label class="special"> 縣市:
+            <select name = "rating">
+                  <option selected>臺北市</option>
+                  <option>新北市</option>
+                  <option>桃園市</option>
+                  <option>臺中市</option>
+                  <option>臺南市</option>
+                  <option>高雄市</option>
+               </select>
+
+        </label></p>
+		 
+   <p>
+   <em class="special">訂單滿意度</em>
+	</p> 
+   <label>極好
+      <input name = "thingsliked" type = "radio" value = "極好" checked></label>
+   <label>好
+      <input name = "thingsliked" type = "radio" value = "好"></label>
+   <label>普通
+      <input name = "thingsliked" type = "radio" value = "普通普通"></label>
+   <label>差
+      <input name = "thingsliked" type = "radio" value = "差"></label>
+   <label>非常差
+      <input name = "thingsliked" type = "radio" value = "非常差"></label>
+		</p>
+		<tr>
+           <td  colspan = "2" >
+		   <p>
+            <input type = "submit" value = "Submit" />
+         </p>
+		   </td>
+       </tr>
+	   </form>
+	   </body>
+	   </html>
+ 
+         
+
